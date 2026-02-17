@@ -4,9 +4,25 @@ ramisha-azhar-phylogenetic-tree/
 ├── README.md
 ├── code.py
 │
-├──fastqc/
-|
-├──multiqc/
+├── raw_data/
+│   └── fasta_files/
+│       └── data/
+│           ├── ERR4079133_1.fastq.gz
+│           ├── ERR4079133_2.fastq.gz
+│           ├── ERR4079285_1.fastq.gz
+│           └── ERR4079285_2.fastq.gz
+│
+├── fastqc/
+│   ├── ERR4079133_1_fastqc.html
+│   ├── ERR4079133_1_fastqc.zip
+│   ├── ERR4079133_2_fastqc.html
+│   ├── ERR4079133_2_fastqc.zip
+│   ├── ERR4079285_1_fastqc.html
+│   ├── ERR4079285_1_fastqc.zip
+│   ├── ERR4079285_2_fastqc.html
+│   └── ERR4079285_2_fastqc.zip
+│
+├── multiqc/
 │   └── multiqc_data/
 │       ├── fastqc-status-check-heatmap.txt
 │       ├── fastqc_adapter_content_plot.txt
@@ -24,7 +40,7 @@ ramisha-azhar-phylogenetic-tree/
 │       ├── multiqc_software_versions.txt
 │       └── multiqc_sources.txt
 │
-├──trimmed_reads/
+├── trimmed_reads/
 │   ├── ERR4079133_1.fastq.gz_trimming_report.txt
 │   ├── ERR4079133_1_val_1.fq.gz
 │   ├── ERR4079133_2.fastq.gz_trimming_report.txt
@@ -32,28 +48,33 @@ ramisha-azhar-phylogenetic-tree/
 │   ├── ERR4079285_1.fastq.gz_trimming_report.txt
 │   ├── ERR4079285_1_val_1.fq.gz
 │   ├── ERR4079285_2.fastq.gz_trimming_report.txt
-│   └── ERR4079285_2_val_2.fq.gz
+|   ├── ERR4079285_2_val_2.fq.gz
+│   └── fastqc/
 │
 ├── mash_results/
-│       ├── ERR4079133_1_val_1.fq.gz.msh
-│       ├── ERR4079133_1_val_1.fq.gz_vs_ref.txt
-│       ├── ERR4079133_2_val_2.fq.gz.msh
-│       ├── ERR4079133_2_val_2.fq.gz_vs_ref.txt
-│       ├── ERR4079285_1_val_1.fq.gz.msh
-│       ├── ERR4079285_1_val_1.fq.gz_vs_ref.txt
-│       ├── ERR4079285_2_val_2.fq.gz.msh
-│       ├── ERR4079285_2_val_2.fq.gz_vs_ref.txt
-│       └── Fv10027Complete.fasta.msh
+│   ├── ERR4079133_1_val_1.fq.gz.msh
+│   ├── ERR4079133_1_val_1.fq.gz_vs_ref.txt
+│   ├── ERR4079133_2_val_2.fq.gz.msh
+│   ├── ERR4079133_2_val_2.fq.gz_vs_ref.txt
+│   ├── ERR4079285_1_val_1.fq.gz.msh
+│   ├── ERR4079285_1_val_1.fq.gz_vs_ref.txt
+│   ├── ERR4079285_2_val_2.fq.gz.msh
+│   ├── ERR4079285_2_val_2.fq.gz_vs_ref.txt
+│   └── Fv10027Complete.fasta.msh
 │
-├──alignment/
+├── alignment/
+│   ├── Fv10027Complete.fasta
+│   ├── Fv10027Complete.fasta.amb
+│   ├── Fv10027Complete.fasta.ann
+│   ├── Fv10027Complete.fasta.bwt
+│   ├── Fv10027Complete.fasta.pac
+│   ├── Fv10027Complete.fasta.sa
 │   ├── ERR4079133.sam
 │   ├── ERR4079133.bam
 │   ├── ERR4079133.sorted.bam
 │   ├── ERR4079133_dedup.bam
 │   ├── ERR4079285_sorted.bam
 │   ├── ERR4079285_dedup.bam
-│   ├── Fv10027Complete.fasta.amb
-│   ├── Fv10027Complete.fasta.ann
 │   └── alignment_stats/
 │       ├── ERR4079133_dedup_metrics.txt
 │       ├── ERR4079133_flagstat.txt
@@ -72,18 +93,11 @@ ramisha-azhar-phylogenetic-tree/
 │   ├── merged.vcf.gz
 │   └── merged.vcf.gz.csi
 │
-├── 07_phylogenetics/
-│   ├── distance_matrix.txt
-│   ├── pairwise_stats.txt
-│   └── two_taxon_tree.nwk
-│
-└── raw_data/
-    └── fasta_files/
-        └── data/
-            ├── ERR4079133_1.fastq.gz
-            ├── ERR4079133_2.fastq.gz
-            ├── ERR4079285_1.fastq.gz
-            └── ERR4079285_2.fastq.gz
+└── phylogenetics/
+    ├── distance_matrix.txt
+    ├── pairwise_stats.txt
+    └── two_taxon_tree.nwk
+
 ```
 This repository contains a complete bioinformatics workflow built using a Conda environment on Ubuntu. It includes all major steps of a variant‑analysis and phylogenomics pipeline, with tools primarily installed from the Bioconda channel. The workflow covers quality control, read trimming, homology checking, read alignment, variant calling, and a custom SNP‑to‑Tree pipeline for generating pairwise SNP distances and a 2‑taxon phylogenetic tree.
 
