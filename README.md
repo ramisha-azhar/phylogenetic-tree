@@ -1,4 +1,90 @@
 # Phylogenetic tree pipeline
+```
+ramisha-azhar-phylogenetic-tree/
+├── README.md
+├── code.py
+│
+├──fastqc/
+|
+├──multiqc/
+│   └── multiqc_data/
+│       ├── fastqc-status-check-heatmap.txt
+│       ├── fastqc_adapter_content_plot.txt
+│       ├── fastqc_per_base_n_content_plot.txt
+│       ├── fastqc_per_base_sequence_quality_plot.txt
+│       ├── fastqc_per_sequence_gc_content_plot_Counts.txt
+│       ├── fastqc_per_sequence_gc_content_plot_Percentages.txt
+│       ├── fastqc_per_sequence_quality_scores_plot.txt
+│       ├── fastqc_sequence_counts_plot.txt
+│       ├── fastqc_sequence_duplication_levels_plot.txt
+│       ├── fastqc_sequence_length_distribution_plot.txt
+│       ├── multiqc_citations.txt
+│       ├── multiqc_fastqc.txt
+│       ├── multiqc_general_stats.txt
+│       ├── multiqc_software_versions.txt
+│       └── multiqc_sources.txt
+│
+├──trimmed_reads/
+│   ├── ERR4079133_1.fastq.gz_trimming_report.txt
+│   ├── ERR4079133_1_val_1.fq.gz
+│   ├── ERR4079133_2.fastq.gz_trimming_report.txt
+│   ├── ERR4079133_2_val_2.fq.gz
+│   ├── ERR4079285_1.fastq.gz_trimming_report.txt
+│   ├── ERR4079285_1_val_1.fq.gz
+│   ├── ERR4079285_2.fastq.gz_trimming_report.txt
+│   └── ERR4079285_2_val_2.fq.gz
+│
+├── mash_results/
+│       ├── ERR4079133_1_val_1.fq.gz.msh
+│       ├── ERR4079133_1_val_1.fq.gz_vs_ref.txt
+│       ├── ERR4079133_2_val_2.fq.gz.msh
+│       ├── ERR4079133_2_val_2.fq.gz_vs_ref.txt
+│       ├── ERR4079285_1_val_1.fq.gz.msh
+│       ├── ERR4079285_1_val_1.fq.gz_vs_ref.txt
+│       ├── ERR4079285_2_val_2.fq.gz.msh
+│       ├── ERR4079285_2_val_2.fq.gz_vs_ref.txt
+│       └── Fv10027Complete.fasta.msh
+│
+├──alignment/
+│   ├── ERR4079133.sam
+│   ├── ERR4079133.bam
+│   ├── ERR4079133.sorted.bam
+│   ├── ERR4079133_dedup.bam
+│   ├── ERR4079285_sorted.bam
+│   ├── ERR4079285_dedup.bam
+│   ├── Fv10027Complete.fasta.amb
+│   ├── Fv10027Complete.fasta.ann
+│   └── alignment_stats/
+│       ├── ERR4079133_dedup_metrics.txt
+│       ├── ERR4079133_flagstat.txt
+│       ├── ERR4079285_dedup_metrics.txt
+│       └── ERR4079285_flagstat.txt
+│
+├── variant_calling/
+│   ├── ERR4079133.g.vcf.gz
+│   ├── ERR4079133.g.vcf.gz.csi
+│   ├── ERR4079133.vcf.gz
+│   ├── ERR4079133.vcf.gz.csi
+│   ├── ERR4079285.g.vcf.gz
+│   ├── ERR4079285.g.vcf.gz.csi
+│   ├── ERR4079285.vcf.gz
+│   ├── ERR4079285.vcf.gz.csi
+│   ├── merged.vcf.gz
+│   └── merged.vcf.gz.csi
+│
+├── 07_phylogenetics/
+│   ├── distance_matrix.txt
+│   ├── pairwise_stats.txt
+│   └── two_taxon_tree.nwk
+│
+└── raw_data/
+    └── fasta_files/
+        └── data/
+            ├── ERR4079133_1.fastq.gz
+            ├── ERR4079133_2.fastq.gz
+            ├── ERR4079285_1.fastq.gz
+            └── ERR4079285_2.fastq.gz
+```
 This repository contains a complete bioinformatics workflow built using a Conda environment on Ubuntu. It includes all major steps of a variant‑analysis and phylogenomics pipeline, with tools primarily installed from the Bioconda channel. The workflow covers quality control, read trimming, homology checking, read alignment, variant calling, and a custom SNP‑to‑Tree pipeline for generating pairwise SNP distances and a 2‑taxon phylogenetic tree.
 
 Tools and stages included in this repository
