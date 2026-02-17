@@ -1,0 +1,3 @@
+Total comparable SNPs: 246932
+Different SNPs: 7873
+Percent identity: 96.8117%

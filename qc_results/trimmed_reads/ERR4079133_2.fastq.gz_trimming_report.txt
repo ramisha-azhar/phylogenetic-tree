@@ -1,0 +1,186 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/fasta_files/data/ERR4079133_2.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.2
+Python version: could not detect
+Number of cores used for trimming: 5
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Nextera adapter for trimming (count: 10). Second best hit was smallRNA (count: 4)
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 30 bp
+Removing Ns from the start and end of reads
+Running FastQC on the data once trimming has completed
+Output file will be GZIP compressed
+
+
+This is cutadapt 5.2 with Python 3.12.7
+Command line parameters: -j 5 -e 0.1 -q 20 -O 1 --trim-n -a CTGTCTCTTATA /mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/fasta_files/data/ERR4079133_2.fastq.gz
+Processing single-end reads on 5 cores ...
+
+=== Summary ===
+
+Total reads processed:              17,343,972
+Reads with adapters:                 7,268,599 (41.9%)
+Reads written (passing filters):    17,343,972 (100.0%)
+
+Total basepairs processed: 2,177,341,583 bp
+Quality-trimmed:              27,360,518 bp (1.3%)
+Total written (filtered):  2,139,699,865 bp (98.3%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 7268599 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 22.9%
+  C: 25.2%
+  G: 24.2%
+  T: 27.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5558819	4335993.0	0	5558819
+2	1219730	1083998.2	0	1219730
+3	358255	270999.6	0	358255
+4	87636	67749.9	0	87636
+5	24923	16937.5	0	24923
+6	5590	4234.4	0	5590
+7	2198	1058.6	0	2198
+8	539	264.6	0	539
+9	362	66.2	0	187 175
+10	554	16.5	1	4 550
+11	323	4.1	1	3 320
+12	98	1.0	1	0 98
+13	72	1.0	1	1 71
+14	87	1.0	1	2 85
+15	77	1.0	1	0 77
+16	81	1.0	1	0 81
+17	74	1.0	1	3 71
+18	94	1.0	1	3 91
+19	85	1.0	1	2 83
+20	84	1.0	1	1 83
+21	82	1.0	1	3 79
+22	112	1.0	1	3 109
+23	98	1.0	1	1 97
+24	75	1.0	1	1 74
+25	81	1.0	1	2 79
+26	92	1.0	1	0 92
+27	81	1.0	1	0 81
+28	84	1.0	1	0 84
+29	77	1.0	1	1 76
+30	79	1.0	1	1 78
+31	70	1.0	1	1 69
+32	94	1.0	1	2 92
+33	95	1.0	1	1 94
+34	81	1.0	1	0 81
+35	76	1.0	1	1 75
+36	76	1.0	1	3 73
+37	65	1.0	1	0 65
+38	109	1.0	1	1 108
+39	81	1.0	1	2 79
+40	87	1.0	1	2 85
+41	89	1.0	1	1 88
+42	85	1.0	1	2 83
+43	86	1.0	1	2 84
+44	83	1.0	1	3 80
+45	93	1.0	1	0 93
+46	90	1.0	1	1 89
+47	96	1.0	1	0 96
+48	90	1.0	1	1 89
+49	88	1.0	1	2 86
+50	70	1.0	1	1 69
+51	71	1.0	1	2 69
+52	99	1.0	1	3 96
+53	84	1.0	1	0 84
+54	83	1.0	1	1 82
+55	90	1.0	1	4 86
+56	91	1.0	1	3 88
+57	79	1.0	1	0 79
+58	78	1.0	1	2 76
+59	83	1.0	1	2 81
+60	96	1.0	1	2 94
+61	85	1.0	1	4 81
+62	90	1.0	1	1 89
+63	84	1.0	1	1 83
+64	72	1.0	1	2 70
+65	80	1.0	1	2 78
+66	92	1.0	1	2 90
+67	108	1.0	1	2 106
+68	82	1.0	1	3 79
+69	86	1.0	1	1 85
+70	65	1.0	1	1 64
+71	70	1.0	1	1 69
+72	87	1.0	1	4 83
+73	81	1.0	1	1 80
+74	73	1.0	1	3 70
+75	89	1.0	1	3 86
+76	86	1.0	1	4 82
+77	87	1.0	1	1 86
+78	82	1.0	1	0 82
+79	95	1.0	1	2 93
+80	86	1.0	1	0 86
+81	83	1.0	1	2 81
+82	67	1.0	1	2 65
+83	97	1.0	1	2 95
+84	95	1.0	1	2 93
+85	78	1.0	1	3 75
+86	79	1.0	1	1 78
+87	82	1.0	1	1 81
+88	84	1.0	1	0 84
+89	68	1.0	1	0 68
+90	60	1.0	1	1 59
+91	83	1.0	1	0 83
+92	82	1.0	1	2 80
+93	92	1.0	1	3 89
+94	70	1.0	1	0 70
+95	103	1.0	1	2 101
+96	71	1.0	1	0 71
+97	67	1.0	1	3 64
+98	100	1.0	1	6 94
+99	68	1.0	1	1 67
+100	104	1.0	1	2 102
+101	81	1.0	1	5 76
+102	83	1.0	1	1 82
+103	82	1.0	1	2 80
+104	72	1.0	1	0 72
+105	82	1.0	1	0 82
+106	87	1.0	1	4 83
+107	87	1.0	1	4 83
+108	79	1.0	1	1 78
+109	91	1.0	1	3 88
+110	93	1.0	1	1 92
+111	89	1.0	1	0 89
+112	69	1.0	1	2 67
+113	88	1.0	1	2 86
+114	101	1.0	1	1 100
+115	97	1.0	1	3 94
+116	76	1.0	1	0 76
+117	102	1.0	1	4 98
+118	71	1.0	1	3 68
+119	97	1.0	1	0 97
+120	97	1.0	1	2 95
+121	82	1.0	1	1 81
+122	95	1.0	1	1 94
+123	94	1.0	1	2 92
+124	74	1.0	1	5 69
+125	73	1.0	1	2 71
+126	44	1.0	1	1 43
+
+RUN STATISTICS FOR INPUT FILE: /mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/fasta_files/data/ERR4079133_2.fastq.gz
+=============================================
+17343972 sequences processed in total
+
+Total number of sequences analysed for the sequence pair length validation: 17343972
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (30 bp): 70935 (0.41%)

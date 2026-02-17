@@ -1,0 +1,1 @@
+/mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/fasta_files/genome/Fv10027Complete.fasta	/mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/qc_results/trimmed_reads/ERR4079285_2_val_2.fq.gz	0.0224204	0	454/1000

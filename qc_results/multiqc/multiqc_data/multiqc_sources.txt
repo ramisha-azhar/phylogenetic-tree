@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ERR4079133_1	/mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/qc_results/fastqc/ERR4079133_1_fastqc.zip
+FastQC	all_sections	ERR4079133_2	/mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/qc_results/fastqc/ERR4079133_2_fastqc.zip
+FastQC	all_sections	ERR4079285_1	/mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/qc_results/fastqc/ERR4079285_1_fastqc.zip
+FastQC	all_sections	ERR4079285_2	/mnt/c/Users/ramis/OneDrive/Desktop/BPP/pangenome/qc_results/fastqc/ERR4079285_2_fastqc.zip
