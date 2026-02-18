@@ -221,17 +221,25 @@ I have used **conda** as paskage and environmental manager and among both distri
 
 ```
 sudo apt update && sudo apt upgrade -y #Update system packages
+
 sudo apt install wget bzip2 -y #Install required tools
+
 wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh #Download the latest Anaconda installer
+
 bash Anaconda3-2024.10-1-Linux-x86_64.sh #Run the installer
+
 source ~/.bashrc  #Activate Anaconda
+
 conda --version #Confirm installation
+
 conda 24.11.3
 ```
 conda environmnet activation
 ```
 conda activate #to see if we have conda
+
 conda list ##to see all the default packages in the conda
+
 conda env list # to see all our environment that we have created
 base                  *  /home/ramisha_azhar/anaconda3
 the * star means we are basically in this environmnet and base is the default environmnet
@@ -240,8 +248,11 @@ the * star means we are basically in this environmnet and base is the default en
 to create the environmnet
 ```
 conda create --name mynewenv   #the name of my environmnet is mynewenv
+
 conda activate mynewenv   #activate the environment
+
 conda deactivate     #deactivate the environmnet and return to the base
+
 conda env list  #to see the list of all the environmnet created
 # conda environments:
 #
