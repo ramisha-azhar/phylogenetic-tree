@@ -7,10 +7,12 @@ ramisha-azhar-phylogenetic-tree/
 ├── raw_data/
 │   └── fasta_files/
 │       └── data/
-│           ├── ERR4079133_1.fastq.gz
-│           ├── ERR4079133_2.fastq.gz
-│           ├── ERR4079285_1.fastq.gz
-│           └── ERR4079285_2.fastq.gz
+│       |   ├── ERR4079133_1.fastq.gz
+│       |   ├── ERR4079133_2.fastq.gz
+│       |   ├── ERR4079285_1.fastq.gz
+│       |   └── ERR4079285_2.fastq.gz
+|       └── genome/
+|             └──Fv10027Complete.fasta (reference genome)
 │
 ├── fastqc/
 │   ├── ERR4079133_1_fastqc.html
